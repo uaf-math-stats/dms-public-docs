@@ -1,0 +1,51 @@
+\documentclass[12pt]{report}
+
+% HOW TO complete processing of this figure with mostly command-line linux tools:
+%  $ pdftk grad-course-matrix.pdf cat end output foo.pdf
+%  $ pdfcrop foo.pdf foo.pdf
+%  $ pdftk foo.pdf cat 1E output bar.pdf
+% now use Gimp or similar to convert to .png
+
+\usepackage{pdfsync}
+\usepackage{rotating}
+\usepackage{palatino}
+
+\setlength{\textwidth}{7.5in}
+\setlength{\textheight}{9.5in}
+\setlength{\oddsidemargin}{-.5in}
+\addtolength{\voffset}{-1in}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{center}
+\begin{sidewaystable}
+\begin{tabular}{| p{2cm} || p{5.0cm} | p{5.0cm} || p{5.0cm} | p{5.0cm} |}
+
+\hline
+& \textbf{FALL odd (2013)} & \textbf{SPRING even (2014)} & \textbf{FALL even (2014)} & \textbf{SPRING odd (2015)} \\
+\hline\hline
+core & MATH 641 Real Analysis & MATH 645 Complex Analysis & MATH 631 Algebra I & MATH 651 Topology \\
+&  &&&\\
+\hline
+elective 
+~(pure) & MATH 663 Applied Combinatorics and Graph Theory & MATH 617 Functional Analysis & MATH 6XX Geometry & MATH 632 Algebra II \\
+&  &&  & \\
+\hline
+elective 
+(applied)
+& MATH 661 Optimization & MATH 615 Applied Numerical Analysis & MATH 614 Numerical Linear Algebra & MATH 660 Advanced Mathematical Modeling \\
+& \\
+\hline
+& MATH 665 Topics && MATH 665 Topics&\\
+&  &&  &\\
+\hline
+& MATH 611 Mathematical Physics & MATH 612 Mathematical Physics&& \\
+\hline
+\end{tabular}
+%\caption{\sc \Large Graduate course matrix}
+\end{sidewaystable}
+\end{center}
+
+\end{document}
