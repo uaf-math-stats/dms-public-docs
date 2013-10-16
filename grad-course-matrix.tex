@@ -1,13 +1,15 @@
 \documentclass[12pt]{report}
 
 % HOW TO complete processing of this figure with mostly command-line linux tools:
+%
+% 1. either "make grad-course-matrix-crop.pdf" or do
 %  $ pdftk grad-course-matrix.pdf cat end output foo.pdf
 %  $ pdfcrop foo.pdf foo.pdf
-%  $ pdftk foo.pdf cat 1E output bar.pdf
-% now use Gimp or similar to convert to .png
+%  $ pdftk foo.pdf cat 1E output grad-course-matrix-crop.pdf
+%
+% 2. now use Gimp or similar to convert to .png
 
-\usepackage{pdfsync}
-\usepackage{rotating}
+%\usepackage{rotating}
 \usepackage{palatino}
 
 \setlength{\textwidth}{7.5in}
@@ -19,9 +21,10 @@
 
 \pagestyle{empty}
 
+\small
 \begin{center}
-\begin{sidewaystable}
-\begin{tabular}{| p{2cm} || p{5.0cm} | p{5.0cm} || p{5.0cm} | p{5.0cm} |}
+%\begin{sidewaystable}
+\begin{tabular}{| p{1.6cm} || p{4.0cm} | p{4.0cm} | p{4.0cm} | p{4.0cm} |}
 
 \hline
 & \textbf{FALL odd (2013)} & \textbf{SPRING even (2014)} & \textbf{FALL even (2014)} & \textbf{SPRING odd (2015)} \\
@@ -34,9 +37,8 @@ elective
 &  &&  & \\
 \hline
 elective 
-(applied)
-& MATH 661 Optimization & MATH 615 Applied Numerical Analysis & MATH 614 Numerical Linear Algebra & MATH 660 Advanced Mathematical Modeling \\
-& \\
+~(applied) & MATH 661 Optimization & MATH 615 Applied Numerical Analysis & MATH 614 Numerical Linear Algebra & MATH 660 Advanced Mathematical Modeling \\
+&  &&  & \\
 \hline
 & MATH 665 Topics && MATH 665 Topics&\\
 &  &&  &\\
@@ -45,7 +47,7 @@ elective
 \hline
 \end{tabular}
 %\caption{\sc \Large Graduate course matrix}
-\end{sidewaystable}
+%\end{sidewaystable}
 \end{center}
 
 \end{document}

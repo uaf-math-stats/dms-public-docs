@@ -4,10 +4,12 @@ all:
 grad-course-matrix-crop.pdf: grad-course-matrix.tex
 	pdflatex $<
 	pdflatex $<
-	pdftk grad-course-matrix.pdf cat end output foo.pdf
-	pdfcrop foo.pdf foo.pdf
-	pdftk foo.pdf cat 1E output grad-course-matrix-crop.pdf
-	rm foo.pdf
+	pdfcrop grad-course-matrix.pdf grad-course-matrix-crop.pdf
+	# if using "sidewaystable":
+	#pdftk grad-course-matrix.pdf cat end output foo.pdf
+	#pdfcrop foo.pdf foo.pdf
+	#pdftk foo.pdf cat 1E output grad-course-matrix-crop.pdf
+	#rm foo.pdf
 
 .PHONY: clean
 
