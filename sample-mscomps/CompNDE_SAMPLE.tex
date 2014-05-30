@@ -1,0 +1,71 @@
+\documentclass[11pt]{amsart}
+%prepared in AMSLaTeX, under LaTeX2e
+\addtolength{\oddsidemargin}{-.65in}
+\addtolength{\evensidemargin}{-.65in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\textheight}{1.0in}
+
+\renewcommand{\baselinestretch}{1.2}
+
+\usepackage{verbatim} % for "comment" environment
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem*{example}{Example}
+\newtheorem*{problem}{Problem}
+\newtheorem*{remark}{Remark}
+
+% macros
+\usepackage{amssymb}
+\newcommand{\ddx}[1]{\ensuremath{\frac{d#1}{dx}}}
+\newcommand{\eps}{\epsilon}
+\newcommand{\grad}{\nabla}
+\newcommand{\image}{\operatorname{im}}
+\newcommand{\integers}{\mathbb{Z}}
+\newcommand{\ip}[2]{\ensuremath{\left<#1,#2\right>}}
+\newcommand{\lam}{\lambda}
+\newcommand{\lap}{\triangle}
+\newcommand{\ppx}[1]{\ensuremath{\frac{\partial#1}{\partial x}}}
+\newcommand{\RR}{\mathbb{R}}
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\subheading}[1]{\medskip\noindent \textbf{#1.}\quad}
+\newcommand{\epart}[1]{\,\textbf{(#1)}\quad}
+\newcommand{\lpart}[1]{\medskip\noindent\textbf{(#1)}\quad}
+
+\begin{document}
+\thispagestyle{empty}
+\Large \noindent \underline{\textbf{SAMPLE}} \hfill\underline{\textbf{SAMPLE}}
+
+\scriptsize \noindent 5 May, 2015  \hfill  \tiny [AUTHOR: Bueler]
+\normalsize\bigskip
+
+\centerline{\large\textbf{Numerical Analysis of Differential Equations Comprehensive Exam}}
+\bigskip
+
+\centerline{Complete {\bf SIX} of the following eight problems.  They are weighted equally.}
+\bigskip
+
+\subheading{1}  Compute the truncation error of the simplest implicit method
+\begin{equation}\label{simpimpl}
+\frac{U_j^{n+1} - U_j^n}{\Delta t} = K \frac{U_{j+1}^{n+1} - 2 U_j^{n+1} + U_{j-1}^{n+1}}{\Delta x^2}
+\end{equation}
+for the heat equation $u_t = K u_{xx}$.  State the definition of the truncation error in the context of this problem.  Use Taylor's theorem with remainder to find an upper bound for the truncation error in terms of upper bounds of appropriate derivatives of the exact solution $u(x,t)$.
+
+\subheading{2}  Show that method \eqref{simpimpl} is unconditionally stable.
+
+\subheading{3}  Consider the boundary value problem for the Poisson equation
+    $$u_{xx} + u_{yy} + f(x,y) = 0$$
+on a square $(x,y) \in [0,1]\times[0,1]$, assuming zero Dirichlet boundary values.  Write a pseudocode (or \textsc{Matlab} code) which applies the simplest consistent finite difference method using a uniform mesh with spacing $\Delta x = \Delta y$.  Your code will assemble a linear system; you should then call ``$A\backslash b$'' (i.e.~a black box) to solve it.  Describe the size and structure of the matrix which arises.
+
+\subheading{4}  State the FTCS (= Forward Time Centered Space) method for the advection equation $u_t + a(x) u_x = 0$.  Specifically, give an equation and a stencil for the method.  Then precisely state the CFL (= Courant-Friedrichs-Lewy) condition for this method on this problem, assuming that $a(x)$ is a bounded function.  If this CFL condition is satisfied, what does that imply for stability or convergence of this method?  If not?  Explain via a stability analysis of the method.
+
+\subheading{5}  Prove that the upwind method applied to $u_t + 3 u_x = 0$ on the interval $0 \le x \le 1$ converges if the CFL condition applies.  Assume a boundary condition $u(0,t)=0$ and an initial condition $u(x,0)=\sin(\pi x)$ if needed.
+
+\subheading{6}  Compute the exact solution $u(x,t)$ of the equation $u_t + (t-x) u_x = 0$ for all $x$ on the entire real line and for $t \ge 0$, using initial condition $u(x,0)=f(x)$.  Justify your steps.
+
+\subheading{7}  What are advantages and disadvantages between choosing leapfrog versus upwind methods to solve $u_t + a(x,t) u_x = 0$?  Clearly state these numerical methods in your answer; supply an equation and a stencil for each method.  Address truncation error, stability, and other qualitative issues in your answer.  (But you do not need to prove your claims.)
+
+\subheading{8}  State the definitions of ``refinement path'' and ``convergence'' for a finite difference scheme for the PDE $u_t = b u_{xx} - a u_x$.  (Note that your definitions will apply to more general PDEs than this particular one.)  For this PDE, specifically with $b>0$ and $a>0$, describe an explicit scheme that allows eventual convergence along a refinement path that has $\mu = b \Delta t/\Delta x^2$ equal to a constant; a sketch of the refinement path will be helpful in this part.
+
+\end{document}

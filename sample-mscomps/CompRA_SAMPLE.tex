@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\textheight= 9 in
+\topmargin=-0.5 in
+\textwidth=6in
+\oddsidemargin= 0.25 in
+\thispagestyle{empty}
+
+\def\ra{\rightarrow}
+\def\Reals{{\mathbb R}}
+\def\Rationals{{\mathbb Q}}
+\def\abs#1{\left|#1\right|}
+
+\begin{document}
+\thispagestyle{empty}
+\Large \noindent \underline{\textbf{SAMPLE}} \hfill\underline{\textbf{SAMPLE}}
+
+\scriptsize \noindent 31 May, 2010  \hfill  \tiny [AUTHOR: Maxwell/Bueler]
+\normalsize\bigskip
+
+\centerline{\large\textbf{Real Analysis Comprehensive Exam}} 
+\bigskip
+
+Complete {\bf EIGHT} of the following ten problems.  It is better to fully
+complete fewer problems than to earn partial credit on many problems.
+\bigskip
+\begin{enumerate}
+
+\item Compute, with justification, 
+$$
+\lim_{n\ra\infty} \int_0^1 \frac{nx}{1+n^2x^2}\; dx.
+$$
+Hint:  $(1-nx)^2 \ge 0$.
+
+\item Give examples of the following
+\begin{enumerate}
+	\item A sequence $(f_n)$ in $C[0,1]$ that converges pointwise to $0$
+	 but such that $\int_0^1 f_n\not\ra 0$.  
+	\item A bounded sequence in $\ell_1$ that has no convergent subsequence.
+	\item A sequence in $C[0,1]$ that converges pointwise to a discontinuous function.
+\end{enumerate}	
+
+\item Let $(f_n)$ be a bounded sequence of functions in $C[0,1]$.
+Define
+$$
+F_n(x) = \int_0^x f_n(s)\; ds.
+$$
+Show that $(F_n)$ has a uniformly convergent subsequence.
+
+\item 
+\begin{enumerate}
+	\item State the Axiom of Completeness for $\Reals$.
+	\item Prove that a monotone increasing sequence of real numbers converges if and only
+	if it is bounded above.
+\end{enumerate}
+
+\item Let $m^*$ denote Lebesgue outer measure.  Suppose that $E$ is a subset of $\Reals$
+such that $m^*(E\cap (a,b)) \le 3/4 (b-a)$ for every interval $(a,b)$. Prove that
+$m^*(E)=0$.
+
+\item Let $(a_n)$ be a bounded sequence.  Show that $\sum_{n=1}^\infty a_n e^{-nx}$
+defines a continuous function on $[1,2]$.
+
+\item Suppose that $X$ is compact and $f:X\ra \Reals$ is continuous.  Prove that $f$ is 
+uniformly continuous.
+
+\item Suppose $f\in L^1(\Reals)$ is uniformly continuous.  Show that $\lim_{x\ra\infty}f(x)=0$.
+
+\item 
+Let $f\in L^1[-\pi,\pi]$.  Show that
+$$
+\lim_{n\ra\infty} \int_{-\pi}^\pi f(x)\cos(kx)\; dx = 0.
+$$
+Hint: First consider the case where $f$ is the characteristic function of
+an interval.
+
+\item Let $f:[0,1]\ra \Reals$ be an increasing, but not necessarily
+continuous function.  Show that $f$ is Borel measurable.
+
+\end{enumerate}
+\end{document}
+
+\item Let $f:X\ra Y$ be a function and $\mathcal A$ a $\sigma$-algebra of sets in $X$.
+Show that $\mathcal{B} = \{ B\subseteq Y : f^{-1}(B)\in \mathcal A\}$ is a $\sigma$-algebra
+of sets in $Y$.
+
+\item Suppose that $\{f_n\}$ is a sequence of functions in $B([0,1])$ (i.e. the bounded real-valued functions on $[0,1]$) converging uniformly to $g$.  Suppose for some $x\in [0,1]$ that each $f_n$
+is continuous at $x$.  Show that $g$ is continuous at $x$.
+
+OR
+
