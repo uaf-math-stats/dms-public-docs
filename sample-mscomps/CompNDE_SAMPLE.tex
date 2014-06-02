@@ -2,9 +2,9 @@
 %prepared in AMSLaTeX, under LaTeX2e
 \addtolength{\oddsidemargin}{-.65in}
 \addtolength{\evensidemargin}{-.65in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textwidth}{1.3in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \renewcommand{\baselinestretch}{1.2}
 
@@ -58,7 +58,7 @@ for the heat equation $u_t = K u_{xx}$.  State the definition of the truncation 
     $$u_{xx} + u_{yy} + f(x,y) = 0$$
 on a square $(x,y) \in [0,1]\times[0,1]$, assuming zero Dirichlet boundary values.  Write a pseudocode (or \textsc{Matlab} code) which applies the simplest consistent finite difference method using a uniform mesh with spacing $\Delta x = \Delta y$.  Your code will assemble a linear system; you should then call ``$A\backslash b$'' (i.e.~a black box) to solve it.  Describe the size and structure of the matrix which arises.
 
-\subheading{4}  State the FTCS (= Forward Time Centered Space) method for the advection equation $u_t + a(x) u_x = 0$.  Specifically, give an equation and a stencil for the method.  Then precisely state the CFL (= Courant-Friedrichs-Lewy) condition for this method on this problem, assuming that $a(x)$ is a bounded function.  If this CFL condition is satisfied, what does that imply for stability or convergence of this method?  If not?  Explain via a stability analysis of the method.
+\subheading{4}  State the FTCS (= Forward Time Centered Space) method for the advection equation $u_t + a(x) u_x = 0$.  Specifically, give an equation and a stencil for the method.  Then precisely state the CFL (= Courant-Friedrichs-Lewy) condition for this method on this problem, assuming that $a(x)$ is a bounded function.  If this CFL condition is satisfied, what does that imply for stability or convergence of this method?  If not?  Explain via a stability analysis of the method; you may assume $a(x)=a_0$ is constant in this stability analysis.
 
 \subheading{5}  Prove that the upwind method applied to $u_t + 3 u_x = 0$ on the interval $0 \le x \le 1$ converges if the CFL condition applies.  Assume a boundary condition $u(0,t)=0$ and an initial condition $u(x,0)=\sin(\pi x)$ if needed.
 
