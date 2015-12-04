@@ -1,3 +1,6 @@
+% regenerate PAIR SCH data from this; in matlab do
+%   >> load SCH.txt
+%   >> SCH = reshape(SCH,9,5)
 4596
 896
 72
