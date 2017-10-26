@@ -1,10 +1,14 @@
 Graduate Certificate in Applied and Computational Mathematics
 =============================================================
 
+DRAFT! DRAFT!
+
 General Information
 -------------------
 
-As a post-baccalaureate program, the certificate in applied and computational mathematics is equivalent to nearly a year of course work done by graduate students in this area.   The certificate is ideal for current graduate students in disciplines other than mathematics, but who seek greater exposure to mathematical ideas and techniques.  It is most suitable for students in the sciences and engineering.  The graduate certificate encourages a more in-depth study and it provides students a credential recognizing their additional mathematical expertise.
+As a post-baccalaureate program, the Graduate Certificate in Applied and Computational Mathematics is equivalent to nearly a year of course work done by graduate students in this area.  The Certificate encourages a more in-depth study and it provides students a credential recognizing their additional mathematical expertise.
+
+The Certificate is ideal for current graduate students in disciplines other than mathematics, but who seek greater exposure to mathematical ideas and techniques.  It is most suitable for students in the sciences and engineering.  It is not suitable for students already enrolled in MS Mathematics or PhD Mathematics programs.
 
 [Admission Requirements](https://github.com/bueler/dms-public-docs/blob/master/mathgradcert/ADMITREQUIRES.md)
 
