@@ -7,7 +7,7 @@ DRAFT! DRAFT!
 
 * [Complete the graduate certificate requirements.](http://catalog.uaf.edu/graduate/#GraduateCertificate)
 
-* Complete two of the following 3.0 credit courses [**6 credits**]
+* Complete two of the following 3 credit courses [**6 credits**]
   * MATH F614 Numerical Linear Algebra
   * MATH F615 Numerical Analysis of Differential Equations
   * MATH F660 Advanced Mathematical Modeling
