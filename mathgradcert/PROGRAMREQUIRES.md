@@ -16,7 +16,7 @@ DRAFT! DRAFT!
   * MATH F661 Optimization
   * MATH F663 Graph Theory
 
-* Complete any two elective courses from the following lists: Any 3 or 4 credit MATH course at the 600- or 400- level.  (At most one of these courses may be at the 400- level.) [**6-8 credits**]
+* Complete any two elective courses from the following: Any 3 or 4 credit MATH course at the 600- or 400- level, except for M698 and M699.  At most one of these courses may be at the 400- level. [**6-8 credits**]
 
 Total: **12 credits**
 
