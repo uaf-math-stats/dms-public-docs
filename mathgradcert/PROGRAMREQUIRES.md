@@ -7,16 +7,17 @@ DRAFT! DRAFT!
 
 * [Complete the graduate certificate requirements.](http://catalog.uaf.edu/graduate/#GraduateCertificate)
 
-* Complete any two of the following 3.0 credit courses [**6 credits**]
-  * [MATH F611 Mathematical Physics I  ?]
-  * [MATH F612 Mathematical Physics II  ?]
+* Complete two of the following 3.0 credit courses [**6 credits**]
   * MATH F614 Numerical Linear Algebra
   * MATH F615 Numerical Analysis of Differential Equations
   * MATH F660 Advanced Mathematical Modeling
   * MATH F661 Optimization
   * MATH F663 Graph Theory
 
-* Complete any two elective courses from the following: Any 3 or 4 credit MATH course at the 600- or 400- level, except for M698 and M699.  At most one of these courses may be at the 400- level. [**6-8 credits**]
+* Complete two elective courses from the following: Any 3 or 4 credit MATH course at the 600- or 400- level, or any 3 or 4 credit 600-level STAT course. [**6-8 credits**]
+  * Excluding MATH F698, MATH F699, STAT F698, STAT F654, STAT F692, STAT F692A and STAT F692P.
+  * At most one of these courses may be a MATH course at the 400- level.
+  * At most one of these courses may be STAT.
 
 Total: **12 credits**
 
