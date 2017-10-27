@@ -6,7 +6,7 @@ DRAFT! DRAFT!
 General Information
 -------------------
 
-As a post-baccalaureate program, the Graduate Certificate in Applied and Computational Mathematics is equivalent to nearly a year of course work done by graduate students in this area.  The Certificate encourages a more in-depth study and it provides students a credential recognizing their additional mathematical expertise.
+As a post-baccalaureate program, the Graduate Certificate in Applied and Computational Mathematics is equivalent to most of a year of course work done by graduate students in this area.  The Certificate encourages a more in-depth study into mathematics beyond the undergraduate level.  The focus is on mathematics that is useful in the sciences and engineering, especially on techniques that can be applied in computer programs.  Futhermore, it provides students a credential recognizing their additional mathematical expertise.
 
 The Certificate is ideal for current graduate students in disciplines other than mathematics, but who seek greater exposure to mathematical ideas and techniques.  It is most suitable for students in the sciences and engineering.  It is not suitable for students already enrolled in MS Mathematics or PhD Mathematics programs.
 

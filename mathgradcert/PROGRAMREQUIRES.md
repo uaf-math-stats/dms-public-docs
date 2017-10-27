@@ -8,8 +8,8 @@ DRAFT! DRAFT!
 * [Complete the graduate certificate requirements.](http://catalog.uaf.edu/graduate/#GraduateCertificate)
 
 * Complete any two of the following 3.0 credit courses [**6 credits**]
-  * MATH F611 Mathematical Physics I
-  * MATH F612 Mathematical Physics II
+  * [MATH F611 Mathematical Physics I  ?]
+  * [MATH F612 Mathematical Physics II  ?]
   * MATH F614 Numerical Linear Algebra
   * MATH F615 Numerical Analysis of Differential Equations
   * MATH F660 Advanced Mathematical Modeling
