@@ -1,0 +1,412 @@
+% !TEX TS-program = pdflatexmk
+\documentclass[12pt]{amsart}
+\usepackage[margin=.8in]{geometry}
+\usepackage{amsmath,amssymb,amsthm, latexsym, mathrsfs, pdfsync, multicol,
+fancybox, fancyhdr,
+graphicx, enumerate,
+subfig, tikz}
+
+\newcommand{\blankbox}[2]{\fbox{\rule{#1}{0in}\rule{0in}{#2}}}
+%		Problem and Part
+\newcounter{problemnumber}
+\newcounter{partnumber}
+\newcommand{\Problem}{\stepcounter{problemnumber}\setcounter{partnumber}{0}
+       \item[\fbox{\parbox{2em}{\hfil\theproblemnumber\hfil}}]}
+\newcommand{\Part}{\stepcounter{partnumber}\item[(\alph{partnumber})]}
+\newcommand{\Points}[1]{(#1 points) \quad}
+
+\newcommand{\testname}{Final Examination}
+\newcommand{\class}{Math F200X}
+\newcommand{\quarter}{Spring 2011}
+
+\newcommand{\RR}{\ensuremath{\mathbb R} }
+\newcommand{\NN}{\ensuremath{\mathbb N} }
+\newcommand{\ZZ}{\ensuremath{\mathbb Z} }
+\newcommand{\QQ}{\ensuremath{\mathbb Q} }
+\newcommand{\CC}{\ensuremath{\mathbb C} }
+\newcommand{\normale}{\trianglelefteq}
+\newcommand{\normal}{\triangleleft}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\be}{\begin{enumerate}}
+\newcommand{\ee}{\end{enumerate}}
+\newcommand{\bi}{\begin{itemize}}
+\newcommand{\ei}{\end{itemize}}
+\newcommand{\bs}{\begin{slide}}
+\newcommand{\es}{\end{slide}}
+\newcommand{\bx}{\begin{exercise}}
+\newcommand{\ex}{\end{exercise}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\oimp}[1]{\overset{#1}{\Longleftrightarrow}}
+\newcommand{\bv}[1]{\ensuremath{ \mathbf{\vec{#1}}} }
+%\newcommand{\eP}{\varphi}
+
+\newcommand\dsp{\displaystyle}
+
+\newcommand\eP{\varphi}
+\newcommand\ns{\trianglelefteq} 
+\newcommand\ldiv{\, \bigg | \,}
+\newcommand{\Mod[1]}{~( \operatorname{mod} \,#1)}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand\FF{{\mathbb F}}
+
+\newcommand{\tcm}{\textcolor{magenta}}
+
+
+\usepackage{textcomp}
+
+\newcommand{\tc}{\text{:}} 
+
+
+\lhead{\sc Math 631F}
+\chead{\Large \sc Sample MS Comprehensive} 
+\rhead{\sc Spring 2025}
+\cfoot{}
+\pagestyle{fancy}
+%
+\begin{document}
+\thispagestyle{fancy}
+
+
+The actual test will consist of a subset of these problems. You will have two hours to complete the test.
+
+{\bf Instructions:}
+
+\begin{itemize}
+
+\item 
+This test will be closed note and closed book.
+\item
+In order to receive full credit, you must {\bf show your work.}  
+\item
+Raise your hand if you have a question.
+\item Unless told explicitly otherwise, {\bf in each ring there is a multiplicative identity $1\ne 0$.}
+\end{itemize}
+On this sample exam, there are many problems which serve as a model for a problem, but where the details may change for the actual comprehensive exam (e.g., polynomials or integers that appear in problem statements may change).
+%
+\bc \Large\textsc{Part 1: Short Answer} \ec
+
+Complete each of the exercises in this section. (On the actual comprehensive exam,  you'll have  approximately five problems to complete.)
+\begin{enumerate}
+\Problem Consider the cylic group $C_{4900} = \langle x \rangle$ of order $4900 = 2^2 \cdot 5^2 \cdot 7^2$. 
+
+\Part Give the number of generators of $C_{4900}$.
+
+\Part List explicitly the elements $x^a$, with $0 \le a \le 4899$, of order $10$.  
+
+\tcm{\emph{Answer:}}  $\vert x^a \vert = 10$ if $a = \underline{\hskip 12cm }$.
+
+\medskip
+
+(If it helps, you can simply give the prime factorizations of $a$.  I am not interested in your ability to multiply integers.)
+
+
+
+\Problem Consider the cyclic groups $\ZZ/30\ZZ$ and $C_{18} = \langle x \rangle$ of orders $30$ and $18$ respectively, and
+suppose that 
+\begin{align*}
+\varphi_a : \ZZ/30\ZZ &\to C_{18}\\
+ 1  &\mapsto x^a
+\end{align*}
+extends to a well-defined group homomorphism from $\ZZ/30\ZZ$ to $C_{18}$.
+
+\Part List the values of $a$ with $0 \le a \le 17$ for which this is true.  (I.e. The map defines a well-defined group
+homomorphism.)
+
+\Part Give a brief explanation why such a well-defined group homomorphism can not be surjective.
+
+
+\Problem Consider the symmetric group $G = S_{7}$ and let $\sigma = (1 \ 2 \ 3 \ 6 \ 5 \ 4 \  7 )$ be a $7$-cycle.  
+
+\Part Express $\sigma$ as the product of (not necessarily disjoint) transpositions.
+
+\Part Compute the number of conjugates of $\sigma$ in $S_7$.
+
+\Part Let $\tau$ be the $7$-cycle $(3 \ 7 \ 1 \ 4 \ 5 \ 6 \ 2)$.  Give an element $\alpha$ that conjugates
+$\sigma$ to $\tau$, i.e.  give $\alpha$ such that $\alpha \sigma {\alpha}^{-1} = \tau$.
+
+\Part Noting that $S_7$ acts on itself by conjugation, explicitly use the Orbit-Stabilizer theorem to find the 
+size of the stabilizer of $\sigma$ under this action and the elements of the Stabilizer subgroup
+of $S_7$.  
+
+\tcm{The stabilizer of $\sigma$ in this context  is better known as  \underline{\hskip 3cm}. (Using appropriate notation in place of words 
+here is fine.)}
+
+\Part Noting that $\sigma \in A_7$, what is the size of the conjugacy class of $\sigma$ in $A_7$?
+Stated otherwise, how many conjugates in $A_7$ does $\sigma$ have?  Briefly, state a result that justifies
+your answer.
+
+\tcm{\emph{Answer:} The number of conjugates of $\sigma$ in $A_7$ is \underline{\hskip 2cm}} 
+
+\medskip
+
+\tcm{because ....}
+
+
+
+\Problem Suppose that $A$ is an Abelian group of order $200 =  2^3 \cdot 5^2$.  Give the isomorphism
+classes for $A$ in a table below.  In the left hand column, give the elementary divisor decomposition
+and in the right hand column, give the invariant factor decomposition.  {\bf Groups on the same row should
+be isomorphic.}  You do not need to show your work.
+
+\Problem  Give the number of non-isomorphic Abelian groups of order $400 = 2^4 \cdot 5^2$.
+
+
+\Problem Prove that there are no simple groups of order 56.
+
+\Problem Give the definition of a nilpotent element in a ring $R$.  Then
+prove that the set of nilpotent elements in $M_2(\QQ)$ is {\bf not} an ideal.
+
+\Problem  Suppose $G$ is a non-cyclic group of order $205 = 5\cdot 41$.  Give, with proof, the number
+of elements of order $5$ in $G$.
+
+\Problem 
+Find {\bf ALL} solutions $x$ in the integers to the simultaneous congruences. 
+\begin{align*}
+x \equiv \ &7 \mod{11}\\
+x \equiv \ &2 \mod{5}
+\end{align*}
+
+\Problem Draw the lattice diagram of prime ideals for the polynomial ring $\QQ[x]$.  \emph{Note:}  There are infinitely many prime ideals so you  will need a way to indicate them all.
+\Problem Suppose $H$ a subgroup of $G$ of index 2. Show that $H\normal G$.
+\Problem Suppose $\mathbb F$ is a field. Prove that $\mathbb F[x]$ is a principal ideal domain.
+\Problem List all abelian groups (up to isomorphism) of order 72.
+\Problem Let $G$ be a group. 
+\Part Let $G$ be a group, $Z(G)$ the center of $G$. Prove that if $G/Z(G)$ is cyclic, then $G$ is abelian.
+\Part Suppose $G$ is a group of order $p^2$, where $p$ is a prime. Prove that $G$ is abelian.
+\Part Prove that if $G$ is an abelian group of order $pq$, where $p$ and $q$ are distinct primes, then $G$ is cyclic.
+\Problem Let $R$ be a commutative ring with $1\ne 0$ whose only ideals are 0 and $R$. Show that $R$ is a field.
+\Problem List all group homomorphisms from $\ZZ/40\ZZ$ to $\ZZ/60\ZZ$. Your answer must give a complete list, and indicate your notation clearly. You do not need to justify your answer.
+\Problem Determine the greatest common divisor of 1761 and 1567.
+\Problem Decide which of the following are ring homomorphisms from $M_2(\ZZ)$ to $\ZZ$:
+\Part $\left(\begin{array}{cc}a & b \\c & d\end{array}\right)\mapsto a$
+\Part $\left(\begin{array}{cc}a & b \\c & d\end{array}\right)\mapsto a+d$
+\Part $\left(\begin{array}{cc}a & b \\c & d\end{array}\right)\mapsto ad-bc$
+
+\Problem Decide which of the following are ideals of the ring $\ZZ\times\ZZ:$
+\Part $\{ (a,a)\mid a\in \ZZ\}$
+\Part $\{ (2a, 2b)\mid a,b\in\ZZ\}$
+\Part $\{(2a,0)\mid a\in \ZZ\}$
+\Part $\{(a,-a)\mid a\in \ZZ\}$
+\Problem List all group homomorphisms from $\ZZ/40\ZZ$ to $\ZZ/60\ZZ$. Your answer must give a complete list, and indicate your notation clearly. You do not need to justify your answer.
+\Problem Let $A$ and $B$ be groups. Prove that $A\times B\cong B\times A$.
+
+\Problem Solve the simultaneous system of congruences \[x\equiv 3 \mod 16 \qquad x\equiv 9 \mod 25 \qquad y\equiv 42 \mod 49\]
+
+\Problem Prove:
+\Part Any group of order 35 is cyclic.
+\Part Any group of order 147 is not simple.
+\Problem Determine the greatest common divisor of 1761 and 1567.
+\Problem Define $\phi:\CC^{\times}\to\RR^{\times}$ by $\phi(a+bi)=a^{2}+b^{2}$. Prove that $\phi$ is a homomorphism and find the image of $\phi$. Describe the kernel and fibers of $\phi$ geometrically (as subsets of the plane). 
+
+\emph{Recall $S^{\times}$ is the set $S\setminus\{0\}$  under the usual multiplication operation.}
+\Problem Give examples of each of the following or briefly explain why they can't exist:
+\Part An integral domain that is not a field.
+\Part A non-abelian simple group.
+\Part An abelian simple group that is not cyclic.
+\Part A non-abelian group with non-trivial center.
+\Part A finitely generated abelian group that is not cyclic.
+\Part An integral domain that is not a unique factorization domain.
+\Part A principal ideal domain that is not a Euclidean domain.
+\Part An infinite non-abelian group.
+\Part A finite integral domain.
+\Part A ring that is not an integral domain, but that is commutative.
+\Problem Prove that if $A$ and $B$ are subsets of $G$ with $A\subseteq B$ then $C_{G}(B)$ is a subgroup of $C_{G}(A)$.
+\Problem Let $r$ and $s$ be the usual generators for the dihedral group of order 8. List the elements of $D_{8}$ as $1, r, r^{2},r^{3},s,sr,sr^{2},sr^{3}$ and label these with the integers 1, 2, \ldots, 8 respectively. Exhibit the image of $D_{8}$ under the left regular representation of $D_{8}$ into $S_{8}$.
+\Problem 
+Prove that if $G$ is an abelian group of order $pq$, where $p$ and $q$ are distinct primes, then $G$ is cyclic.
+\Problem Show that $f(x)=10x^{4}+6x^{3}+18x^{2}+6x+21 $ and $g(x)= x^3 - 5 x + 3$ are irreducible in $\QQ[x]$, and that $h(x)=x^{3}-5x+2$ is reducible.
+
+\end{enumerate}
+
+
+\bc\Large\textsc{Part 2: Group Theory}\ec
+
+\noindent Complete 2 of the following problems. \emph{On the actual comprehensive exam, there will be four problems for you to choose from.} 
+\begin{enumerate}
+\Problem Suppose $G$ is a group with $H, K$ subgroups of $G$.  Prove that if $H \le N_G(K)$, then
+$HK = \big \{ h k \mid h \in H, k \in K \big \}$ is  a subgroup of $G$. 
+
+\Problem Suppose that a finite group $G$ is of order 105, $\vert G \vert = 3 \cdot 5 \cdot 7$, and that $G$ has normal subgroups of order $3$, $5$ and $7$.   Prove or disprove:  $G$ is cyclic.  
+
+\Problem Let $P$ be a $p$-group, $\vert P \vert = p^a > 1$ for $p$ a prime, and let $A$ be a nonempty finite set.  Suppose that $P$ acts on $A$ and define
+\emph{the set of fixed points} of this action:  
+$$A_0 = \big \{ a \in A \mid g \cdot a = a \text{ for every } g \in P \big \}.$$
+
+
+Prove that 
+$$
+\vert A \vert \equiv \vert A_0 \vert \Mod[p].
+$$
+\Problem Let $\eP (n)$ denote the Euler $\varphi$-function.  Prove that if $p$ is a prime and $n \in \ZZ^+$, then
+$$
+n \ldiv \eP (p^n - 1).
+$$
+(Hint:  Compute the order of $\bar p$ in the appropriate group first.)
+
+\Problem Prove that if $G$ is a group of order $p^2$ for $p$ a prime, then $G$ is Abelian.
+
+\Problem Suppose $G$ is a finite group of order $\vert G \vert = 14,553 = 3^3 \cdot 7^2 \cdot 11$ and that
+$N$ is a normal subgroup of $G$ of order $\vert N \vert = 11$.  Prove that $N  \le Z(G)$.
+
+\Problem Suppose $G$ is a group, $H \le G$, and $\Aut (H)$ the group of automorphisms
+of $H$.  
+
+
+\Part Using the First Isomorphism theorem, give a \tcm{\bf full} proof of the following statement.
+
+The quotient group $N_G(H) / C_G(H) \cong A \le \Aut(H)$.
+
+\Part Suppose now that $P$ is a Sylow $p$-subgroup of $S_p$ for a prime $p$.  Prove that
+$$
+N_{S_p} (P) / C_{S_p} ( P ) \cong \Aut(P).
+$$
+
+
+\Problem Let $G$ be a finite group of order 22.  Prove that $G$ is cyclic or isomorphic to the  dihedral group $D_{22}$.
+
+
+\Problem Let $G$ be any group. Prove that the map from $G$ to itself defined by $g\mapsto g^{2}$ is a homomorphism if and only if $G$ is abelian. 
+\Problem 
+\Part Prove that if $\sigma:G\to G$ is the map $\sigma(x)=x^{-1}$ is a homomorphism, then $G$ is an abelian group.
+\Part Let $G$ be a finite group which possesses an automorphism $\sigma$ such that $\sigma (g)=g$ if and only if $g=1$. If $\sigma^{2}$ is the identity map from $G$ to $G$, prove that $G$ is abelian. 
+
+\noindent\emph{Hint:} Show that every element of $G$ can be written in the form $x^{-1}\sigma(x)$ and apply $\sigma$ to such an expression. 
+\Problem Let $A$ be an abelian group and fix some $n\in\ZZ$. Prove that the following sets are subgroups of $A$:
+\Part $H=\{a^n\mid a\in A\}$
+\Part $K=\{a\in A\mid a^n=1\}$
+\Problem Prove that the subgroup generated by any two distinct elements of order 2 in $S_{3}$ is all of $S_{3}$.
+
+\Problem 
+A group $H$ is \emph{finitely generated} if there is a finite set $A$ such that $H=\langle A\rangle$.
+\Part Prove that every finite group is finitely generated.
+\Part Prove that \ZZ is finitely generated.
+\Part Prove that every finitely generated subgroup of the additive group \QQ is cyclic. [If $H$ is a finitely generated subgroup of \QQ, show that $H\le \langle \frac{1}{k}\rangle$, where $k$ is the product of all of the denominators which appear in a set of generators of $H$.]
+\Part Prove that \QQ is not finitely generated.
+
+
+\Problem Classify groups of order 4 by proving that if $|G|=4$ then $G\cong Z_{4}$ or $G\cong V_{4}$.
+
+\Problem 
+Let $\phi:G\to H$ be a homomorphism of groups with kernel $K$ and let $a,b\in \phi(G)$. Let $X\in G/K$ be the fiber above $a$ and let $Y$ be the fiber above $b$, i.e., $X=\phi^{-1}(a), Y=\phi^{-1}(b)$. Fix an element $u$ of $X$ (so $\phi(u)=a$). Prove that if $XY=Z$ in the quotient group $G/K$ and $w$ is any member of $Z$, then there is some $v\in Y$ such that $uv=w$. [Show $u^{-1}w\in Y$.]
+
+\Problem 
+Prove that in the quotient group $G/N$, $(gN)^{\alpha}=g^{\alpha}N$ for all $\alpha\in \ZZ$.
+
+
+\Problem Let $\phi:\RR^\times\to\RR^\times$ be the map sending $x$ to the absolute value of $x$. Prove that $\phi$ is a homomorphism and find the image of $\phi$. Describe the kernel and fibers of $\phi$. 
+
+\Problem Let $N$ be a finite subgroup of $G$ and suppose $G=\langle T\rangle$ and $N=\langle S\rangle$ for some subsets $T$ and $S$ of $G$. Prove that $N$ is normal in $G$ iff $tSt^{-1}\subseteq N$ for all $t\in T$.
+\Problem
+The \emph{join} of a non-empty collection of subgroups is the smallest subgroup that contains them all. Prove that the join of any non-empty collection of normal subgroups of a group is a normal subgroup. \emph{Hint: It may be helpful to show that $g\langle\cup_{i\in I} A_{i}\rangle g^{-1}=\langle\cup_{i\in I} gA_{i}g^{-1}\rangle$.}
+
+
+\Problem Let $G$ be a finite group, let $H$ be a subgroup of $G$ and $N\normale G$. Prove that if $|H|$ and $|G:N|$ are relatively prime then $H\le N$.
+\Problem Let $M$ and $N$ be normal subgroups of $G$ such that $G=MN$. Prove that $G/(M\cap N)\cong (G/M)\times(G/N)$.
+\Problem Prove that if $H\normale G$ of prime index $p$, then for all $K\le G$ either (i) $K\le H$ or (ii) $G=HK$ and $|K:K\cap H|=p$.
+
+\Problem If $G$ is a group of odd order, prove for any nonidentity $x\in G$ that $x$ and $x^{-1}$ are not conjugate in $G$.
+
+\Problem Let $G$ be a group of order 203. Prove that if $H$ is a normal subgroup of order 7 in $G$ then $H\le Z(G)$. Deduce that $G$ is abelian in this case. 
+
+\Problem Let $P$ be a Sylow $p$-subgroup of $H$ and let $H$ be a subgroup of $K$. If $P\trianglelefteq H$ and $H \trianglelefteq K$, prove that $P$ is normal in $K$.
+
+
+
+\Problem If $A$ and $B$ are normal subgroups of $G$ such that $G/A$ and $G/B$ are both abelian, prove that $G/(A\cap B)$ is abelian. 
+
+\Problem Prove that if $K$ is a normal subgroup of $G$, then $K'=\langle [x,y]\mid x,y\in K\rangle\trianglelefteq G$.
+\Problem A group $G$ is a torsion group if every element has finite order. Prove: If $H\normal G$ and both $H$ and $G/H$ are torsion then $G$ is torsion.
+
+\Problem Show that a group of order 150 has a normal subgroup of order 5 or 25.
+\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bc\Large\textsc{Part 2: Ring and Field Theory}\ec
+\noindent Complete 2 of the following problems. \emph{On the actual comprehensive exam, there will be four problems for you to choose from.} \begin{enumerate}
+\Problem Prove that in a PID every nonzero element is a prime if, and only if,
+it is irreducible.
+
+\Problem Suppose $R$ is a commutative ring with 1 and for each $x \in R$, there is a positive integer $n > 1$ so that
+$x^n = x$.  Prove that every nonzero prime ideal is maximal.
+
+\Problem  Let $\FF_{7}$ denote the finite field with 7 elements.  
+\Part Explicitly construct a finite field with $343 = 7^3$ elements.  Explain your work.
+
+\Part The field you constructed in part (a) is a simple extension of $\FF_{7}$ so let
+$\alpha$ be an element in some extension of $\FF_7$ such that
+$\dsp \vert \FF_{7} (\alpha) \vert = 343$.
+Find the inverse of the element $1 + \alpha \in \FF_{7} (\alpha)$.
+
+
+
+\Problem Find, with brief justification, all ring homomorphisms from $\ZZ \to \ZZ/12\ZZ$.
+
+\Problem Consider the ring of Gaussian integers $\ZZ[i]$. 
+
+\Part Prove that if $\alpha = a + b i$ for $a, b \in \ZZ$ is a Gaussian integer with $N(\alpha) = p$ for $p$ a 
+prime of $\ZZ$, then $\alpha$ is irreducible.
+
+\Part List all the units of $\ZZ[i]$.
+
+\Part Give an example of a prime number $p \in \ZZ$ such that $p$ is irreducible in $\ZZ[i]$.
+Justify your answer by stating an appropriate result.
+
+
+
+
+\Problem Let $F$ be a field and define the ring $F((x))$ of {\em formal Laurent series} with coefficients from $F$ by \[F((x))=\left\{ \sum_{n\ge N}^\infty a_n x^n\mid a_n\in F \text{ and } N\in \ZZ\right\}.\]
+
+ Prove that $F((x))$ is a field. 
+ 
+\Problem Let $R$ be a ring, $U,V$ ideals of $R$ such that $R/U$ and $R/V$ are commutative with $U\cap V=\{0\}$. Prove that $R$ is commutative.
+\Problem Let $R$ be the ring of all continuous real valued functions on the closed interval $\left[0,1\right]$. Prove that the map $\phi:R\to\RR$ defined by $\phi(f)=\int_0^1f(t)dt$ is a homomorphism of additive groups but not a ring homomorphism.
+\Problem Let $R$ and $S$ be nonzero rings with identity and denote their respective identities by $1_R$ and $1_S$. Let $\phi:R\to S$ be a nonzero homomorphism of rings.
+\Part Prove that if $\phi(1_R)\ne 1_S$ then $\phi(1_R)$ is a zero divisor in $S$. Deduce that if $S$ is an integral domain then every ring homomorphism from $R$ to $S$ sends the identity of $R$ to the identity of $S$.
+\Part Prove that if $\phi(1_R)=1_S$ then $\phi(u)$ is a unit in $S$ and that $\phi(u^{-1})=\phi(u)^{-1}$ for each unit $u$ of $R$.
+\Problem Let $I$ and $J$ be ideals of $R$.
+\Part Prove that $I+J$ is the smallest ideal of $R$ containing both $I$ and $J$.
+\Part Prove that $IJ$ is an ideal contained in $I\cap J$.
+\Part Give an example where $IJ\ne I\cap J$.
+\Part Prove that if $R$ is commutative and if $I+J=R$ then $IJ=I\cap J$.
+
+
+
+\Problem Assume $R$ is commutative ring with identity $1\ne 0$ and for each $a\in R$ there is an integer $n>1$ (depending on $a$) such that $a^n=a$. Prove that every prime ideal of $R$ is a maximal ideal. 
+
+\Problem Let $R$ be a Euclidean domain. Let $m$ be the minimum integer in the set of norms of nonzero elements of $R$. Prove that every nonzero element of $R$ of norm $m$ is a unit. Deduce that a nonzero element of norm zero (it such an element exists) is a unit.
+
+
+\Problem Let $R$ be a principal ideal domain.
+\Part Prove that if $P$ is a prime ideal in $R$, the $P$ is maximal.
+\Part Prove that if $M$ is a maximal ideal of $R$, then $R/M$ is a field.
+\Part Prove that a quotient of a PID by a prime ideal is again a PID.
+
+\Problem Let $I=(a)$ be a principal ideal in a commutative ring $R$ with 1. Suppose $P$ is a prime ideal such that $P\subsetneq I$. Prove that $P\subset \cap_{n\ge 1} I^n$.
+
+\Problem Prove that $(x,y)$ and $(2,x,y)$ are prime ideals in $\ZZ(x,y)$, but only the latter ideal is a maximal ideal. 
+
+\Problem Let $F$ be a finite field. Prove that $F[x]$ contains infinitely many primes.
+
+
+\Problem Let $R=\ZZ+x\QQ[x]\subset \QQ[x]$ be the set of polynomials in $x$ with rational coefficients whose constant term is an integer.
+\Part Prove that $R$ is an integral domain and its units are $\pm 1$.
+\Part Show that the irreducibles in $R$ are $\pm p$ where $p$ is a prime in $\ZZ$ and the polynomials $f(x)$ that are irreducible in $\QQ[x]$ and have a constant term $\pm 1$. prove that these irreducibles are prime in $R$.
+\Part Show that $x$ cannot be written as the product of irreducibles in $R$ (in particular, that $x$ is not irreducible) and conclude that $R$ is not a UFD.
+\Part Show that $x$ is not a prime in $R$ and describe the quotient ring $R/(x)$.
+
+
+\Problem Show that the polynomial $(x-1)(x-2)\cdots (x-n)-1$ is irreducible over $\ZZ$ for all $n\ge 1$. (Hint: If the polynomial factors consider the values of the factors at $x=1, 2, \ldots, n$.)
+\Problem Prove that $K_{1}=\FF_{11}[x]/(x^{2}+1)$ and $K_{2}=\FF_{11}[y]/(y^{2}+2y+2)$ are both fields with 121 elements. Prove that the map which sends the element $p(\ol x)$ of $K_{1}$ to the element $p(\ol y +1)$ of $K_{2}$ (where $p$ any polynomial with coefficients in $\FF_{11}$) is well defined and gives a ring (hence field) isomorphism from $K_{1}$ to $K_{2}$.
+\Problem Let $F$ be a field and let $f(x)$ be a polynomial of degree $n$ in $F[x]$. The polynomial $g(x)=x^{n}f(1/n)$ is called the {\em reverse} of $f(x)$. Describe the coefficients of $g$ in terms of the coefficients of $f$. If $f(0)\ne 0$ prove that $f$ is irreducible iff $g$ is irreducible. 
+\Problem Prove that $x^{3}+12x^{2}+18x+6$ is irreducible over $\ZZ[i]$.
+
+
+
+
+\end{enumerate}
+
+\end{document}
+
+
+ 
