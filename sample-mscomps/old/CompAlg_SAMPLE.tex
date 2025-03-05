@@ -1,0 +1,259 @@
+\documentclass{report}
+\usepackage{amsthm, amsmath, amssymb,verbatim,xspace, graphicx}
+\usepackage{pdfsync, listings, color,pgf,tikz}
+\usepackage[all,cmtip]{xy}
+
+\newcommand\R{{\mathbb R}}
+\newcommand\Q{{\mathbb Q}}
+\newcommand\N{{\mathbb N}}
+\newcommand\Z{{\mathbb Z}}
+\newcommand\dsp{\displaystyle}
+
+\newcommand\eP{\varphi}
+\newcommand\ns{\trianglelefteq} 
+\newcommand\ldiv{\, \bigg | \,}
+\newcommand{\Mod[1]}{~( \operatorname{mod} \,#1)}
+\newcommand{\Aut}{\operatorname{Aut}}
+\newcommand\F{{\mathbb F}}
+
+\newcommand{\tcm}{\textcolor{magenta}}
+
+\setlength{\oddsidemargin}{-.25in} 
+\setlength{\evensidemargin}{0in} 
+\setlength{\textwidth}{7in} 
+\setlength{\textheight}{9.5in} 
+
+\setlength{\topmargin}{-.25in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+
+\usepackage{textcomp}
+
+\newcommand{\tc}{\text{:}} % tc=tight colon, for use in math mode in Newick trees
+
+\begin{document}
+
+\noindent
+
+\bigskip
+
+\centerline{\sc \LARGE Sample Algebra Comprehensive Exam Problems}
+
+\medskip
+
+\centerline{Spring 2019}
+
+\vskip .5cm 
+
+This sample exam is a composite of questions asked on recent MATH 631 exams.  
+As a result the length of this exam is much longer (by a factor of at least 2)
+than a comprehensive exam, but the breadth
+of topics covered and the difficulty level are representative of possible test questions.
+
+\medskip
+
+\noindent {\bf Part I.}  Short answer or easy computation.
+
+\begin{enumerate}
+
+\item Consider the cylic group $C_{4900} = \langle x \rangle$ of order $4900 = 2^2 \cdot 5^2 \cdot 7^2$. 
+
+\begin{enumerate}
+
+\item Give the number of generators of $C_{4900}$.
+
+\item List explicitly the elements $x^a$, with $0 \le a \le 4899$, of order $10$.  
+
+\tcm{\emph{Answer:}}  $\vert x^a \vert = 10$ if $a = \underline{\hskip 12cm }$.
+
+\medskip
+
+(If it helps, you can simply give the prime factorizations of $a$.  I am not interested in your ability to multiply integers.)
+
+\end{enumerate}
+
+\item Consider the cyclic groups $\Z/30\Z$ and $C_{18} = \langle x \rangle$ of orders $30$ and $18$ respectively, and
+suppose that 
+\begin{align*}
+\varphi_a : \Z/30\Z &\to C_{18}\\
+ 1  &\mapsto x^a
+\end{align*}
+extends to a well-defined group homomorphism from $\Z/30\Z$ to $C_{18}$.
+
+\begin{enumerate}
+
+\item List the values of $a$ with $0 \le a \le 17$ for which this is true.  (I.e. The map defines a well-defined group
+homomorphism.)
+
+\item Give a brief explanation why such a well-defined group homomorphism can not be surjective.
+
+\end{enumerate}
+
+\item Consider the symmetric group $G = S_{7}$ and let $\sigma = (1 \ 2 \ 3 \ 6 \ 5 \ 4 \  7 )$ be a $7$-cycle.  
+
+\begin{enumerate}
+
+\item Express $\sigma$ as the product of (not necessarily disjoint) transpositions.
+
+\item Compute the number of conjugates of $\sigma$ in $S_7$.
+
+\item Let $\tau$ be the $7$-cycle $(3 \ 7 \ 1 \ 4 \ 5 \ 6 \ 2)$.  Give an element $\alpha$ that conjugates
+$\sigma$ to $\tau$, i.e.  give $\alpha$ such that $\alpha \sigma {\alpha}^{-1} = \tau$.
+
+\item Noting that $S_7$ acts on itself by conjugation, explicitly use the Orbit-Stabilizer theorem to find the 
+size of the stabilizer of $\sigma$ under this action and the elements of the Stabilizer subgroup
+of $S_7$.  
+
+\tcm{The stabilizer of $\sigma$ in this context  is better known as  \underline{\hskip 3cm}. (Using appropriate notation in place of words 
+here is fine.)}
+
+\item Noting that $\sigma \in A_7$, what is the size of the conjugacy class of $\sigma$ in $A_7$?
+Stated otherwise, how many conjugates in $A_7$ does $\sigma$ have?  Briefly, state a result that justifies
+your answer.
+
+\tcm{\emph{Answer:} The number of conjugates of $\sigma$ in $A_7$ is \underline{\hskip 2cm}} 
+
+\medskip
+
+\tcm{because ....}
+
+\end{enumerate}
+
+\item 
+
+\begin{enumerate}
+
+\item Suppose that $A$ is an Abelian group of order $200 =  2^3 \cdot 5^2$.  Give the isomorphism
+classes for $A$ in a table below.  In the left hand column, give the elementary divisor decomposition
+and in the right hand column, give the invariant factor decomposition.  {\bf Groups on the same row should
+be isomorphic.}  You do not need to show your work.
+
+\item  Give the number of non-isomorphic Abelian groups of order $400 = 2^4 \cdot 5^2$.
+
+\end{enumerate}
+
+\item Prove that there are no simple groups of order 56.
+
+\item Give the definition of a nilpotent element in a ring $R$.  Then
+prove that the set of nilpotent elements in $M_2(\Q)$ is {\bf not} an ideal.
+
+\item  Suppose $G$ is a non-cyclic group of order $205 = 5\cdot 41$.  Give, with proof, the number
+of elements of order $5$ in $G$.
+
+\item 
+Find {\bf ALL} solutions $x$ in the integers to the simultaneous congruences. 
+\begin{align*}
+x \equiv \ &7 \mod{11}\\
+x \equiv \ &2 \mod{5}
+\end{align*}
+
+\item Draw the lattice diagram of prime ideals for the polynomial ring $\Q[x]$.  \emph{Note:}  There are infinitely many prime ideals so you 
+will need a way to indicate them all.
+
+\end{enumerate}
+
+\vskip 1cm
+
+\noindent {\bf Part II.}  Theory
+
+\begin{enumerate}
+
+\item Suppose $G$ is a group with $H, K$ subgroups of $G$.  Prove that if $H \le N_G(K)$, then
+$HK = \big \{ h k \mid h \in H, k \in K \big \}$ is  a subgroup of $G$.
+
+\item Suppose that a finite group $G$ is of order 105, $\vert G \vert = 3 \cdot 5 \cdot 7$, and that $G$ has normal subgroups
+of order $3$, $5$ and $7$.   Prove or disprove:  $G$ is cyclic.
+
+\item Let $P$ be a $p$-group, $\vert P \vert = p^a > 1$ for $p$ a prime, and let $A$ be a nonempty finite set.  Suppose that $P$ acts on $A$ and define
+\emph{the set of fixed points} of this action:  
+$$A_0 = \big \{ a \in A \mid g \cdot a = a \text{ for every } g \in P \big \}.$$
+
+
+Prove that 
+$$
+\vert A \vert \equiv \vert A_0 \vert \Mod[p].
+$$
+
+\item Let $\eP (n)$ denote the Euler $\varphi$-function.  Prove that if $p$ is a prime and $n \in \Z^+$, then
+$$
+n \ldiv \eP (p^n - 1).
+$$
+(Hint:  Compute the order of $\bar p$ in the appropriate group first.)
+
+\item Prove that if $G$ is a group of order $p^2$ for $p$ a prime, then $G$ is Abelian.
+
+\item Suppose $G$ is a finite group of order $\vert G \vert = 14,553 = 3^3 \cdot 7^2 \cdot 11$ and that
+$N$ is a normal subgroup of $G$ of order $\vert N \vert = 11$.  Prove that $N  \le Z(G)$.
+
+\item Suppose $G$ is a group, $H \le G$, and $\Aut (H)$ the group of automorphisms
+of $H$.  
+
+\begin{enumerate}
+
+\item Using the First Isomorphism theorem, give a \tcm{\bf full} proof of the following statement.
+
+The quotient group $N_G(H) / C_G(H) \cong A \le \Aut(H)$.
+
+\item Suppose now that $P$ is a Sylow $p$-subgroup of $S_p$ for a prime $p$.  Prove that
+$$
+N_{S_p} (P) / C_{S_p} ( P ) \cong \Aut(P).
+$$
+
+\end{enumerate}
+
+\item Let $G$ be a finite group of order 22.  Prove that $G$ is cyclic or isomorphic to the 
+dihedral group $D_{22}$.
+
+\item In a PID every nonzero element is a prime if, and only if,
+it is irreducible.
+
+\item Suppose $R$ is a commutative ring with 1 and for each $x \in R$, there is a positive integer $n > 1$ so that
+$x^n = x$.  Prove that every nonzero prime ideal is maximal.
+
+\item  Let $\F_{7}$ denote the finite field with 7 elements.  
+
+\begin{enumerate}
+
+\item Explicitly construct a finite field with $343 = 7^3$ elements.  Explain your work.
+
+\item The field you constructed in part (a) is a simple extension of $\F_{7}$ so let
+$\alpha$ be an element in some extension of $\F_7$ such that
+$\dsp \vert \F_{7} (\alpha) \vert = 343$.
+Find the inverse of the element $1 + \alpha \in \F_{7} (\alpha)$.
+
+\end{enumerate}
+
+\item Find, with brief justification, all ring homomorphisms from $\Z \to \Z/12Z$.
+
+\item Consider the ring of Gaussian integers $\Z[i]$.  
+
+\begin{enumerate}
+
+\item Prove that if $\alpha = a + b i$ for $a, b \in \Z$ is a Gaussian integer with $N(\alpha) = p$ for $p$ a 
+prime of $\Z$, then $\alpha$ is irreducible.
+
+\item List all the units of $\Z[i]$.
+
+\item Give an example of a prime number $p \in \Z$ such that $p$ is irreducible in $\Z[i]$.
+Justify your answer by stating an appropriate result.
+
+\end{enumerate}
+
+\item  Let $D$ be a square-free integer, and consider the quadratic number field $\Q (\sqrt{D})$ and its subring of integers
+$\mathcal O$.  Let $N: \Q(\sqrt{D}) \to \Z$ denote the field norm map which is multiplicative.  The restriction of $N$ to
+the ring of integers $\mathcal O$ will also denoted by $N$.
+
+\begin{enumerate}
+
+\item Prove that an element $\alpha \in \mathcal O$ is a unit if, and only if, $N(\alpha) = \pm1$.
+
+\item  When $D = -3$, the ring of integers is $\dsp \mathcal O = \Z + \Z \bigg(\frac{1 + \sqrt{-3}}{2}\bigg)$.
+Find a unit in $\mathcal O \smallsetminus \Z$.  
+
+\item  Let $D=-5$.  Give, with proof, an example of an element $x = a + b \sqrt{-5}$ for $a, b \in Z$
+such that $x$ is irreducible, but $x$ is not prime in $\Z [ \sqrt{-5}]$.  
+\end{enumerate}
+
+\end{enumerate}
+
+\end{document}
