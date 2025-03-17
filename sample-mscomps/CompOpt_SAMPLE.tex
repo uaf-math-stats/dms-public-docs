@@ -42,7 +42,7 @@
 \thispagestyle{empty}
 \Large \noindent \underline{\textbf{SAMPLE}} \hfill\underline{\textbf{SAMPLE}}
 
-\scriptsize \noindent February 2025  \hfill  \tiny [AUTHOR: Bueler]
+\scriptsize \noindent March 2025  \hfill  \tiny [AUTHOR: Bueler/Rhodes]
 \normalsize\bigskip
 
 \centerline{\large \textbf{Optimization Comprehensive Exam}}
@@ -59,7 +59,7 @@
     \text{subject to} && -x_1 + x_2 &\ge -3 \\
                       && - 2 x_1 + x_2 &\le 1 \\
                       && x_1 + x_2 & \le 7 \\
-                      && x &\ge 0
+                      && x_1 \ge 0, \, x_2 &\ge 0
 \end{alignat*}
 Sketch the feasible set $S$ for the above problem.  Be sure to label the axes, and \textbf{give the coordinates for each extreme point of $S$}.
 
@@ -70,16 +70,21 @@ Sketch the feasible set $S$ for the above problem.  Be sure to label the axes, a
 \epart{d} If you start at the extreme point $(0,0)$, and apply the usual simplex method, which will be the next extreme point to be visited?
 
 
-\prob{B}  Consider a feasible set defined by linear equality and inequality constraints:
+\prob{B}  Let $\mathcal{E}$ and $\mathcal{I}$ be finite sets of indices.  Consider a feasible set defined by linear equality and inequality constraints:
 	$$S = \left\{x \in \RR^n\,:\quad \begin{matrix}
 	a_i^T x = b_i \quad \text{for $i$ in $\mathcal{E}$} \\
 	a_i^T x \ge b_i \quad \text{for $i$ in $\mathcal{I}$}
 	\end{matrix}\right\}$$
-Here, for each $i$ in the finite index sets $\mathcal{E}$ and $\mathcal{I}$, we have $a_i\in \RR^n$ and $b_i\in\RR$.  Let $\tilde x\in S$ be a feasible point.
+For each $i$, we have $a_i\in \RR^n$ and $b_i\in\RR$.
 
-\epart{a}  By definition, $p\in\RR^n$ is a feasible direction at $\tilde x$ if there is $\eps>0$ so that $x = \tilde x + \alpha p$ is feasible ($x\in S$) for all $0\le \alpha \le \eps$.  Identify necessary and sufficient conditions on $p\in\RR^n$ so that $p$ is a feasible direction.
+\epart{a}  Show that $S$ is convex.
 
-\epart{b}  Suppose $p\in\RR^n$ is a feasible direction at $\tilde x$.  Identify necessary and sufficient conditions on $\alpha \ge 0$ so that $x = \tilde x + \alpha p$ is feasible, that is, $x\in S$.  (\emph{Hint. The conditions will depend on $a_i,b_i,\tilde x,p$.})
+\medskip
+\noindent Now assume that $\tilde x\in S$ is a feasible point.  Note that your conditions in the next two parts will depend on $a_i$, $b_i$, and $\tilde x$.
+
+\epart{b}  By definition, $p\in\RR^n$ is a feasible direction at $\tilde x$ if there is $\eps>0$ so that $x = \tilde x + \alpha p$ is feasible ($x\in S$) for all $0\le \alpha \le \eps$.  Identify necessary and sufficient conditions on $p\in\RR^n$ so that $p$ is a feasible direction.
+
+\epart{c}  Suppose $p\in\RR^n$ is a feasible direction at $\tilde x$.  Identify necessary and sufficient conditions on $\alpha \ge 0$ so that $x = \tilde x + \alpha p$ is feasible, that is, $x\in S$.  (\emph{Hint.  These conditions also depend on $p$.})
 
 
 \prob{C}  Suppose $x$ is a point of a set $S = \{x \in \RR^n\,:\,Ax=b, x\ge 0\}$, where $A$ is an $m\times n$ matrix with $m\le n$, and $b\in\RR^m$.  Show that if $x$ is a basic feasible solution then it is an extreme point of $S$.
@@ -90,7 +95,7 @@ Here, for each $i$ in the finite index sets $\mathcal{E}$ and $\mathcal{I}$, we 
 
 \epart{a} Compute the gradient and the Hessian.
 
-\epart{b} The surface $z=f(x)$ has many local maxima and minima.  Choose an algorithm which would quickly find a local minima, and write a pseudocode for this algorithm.  Choose an algorithm which uses the Hessian and which has guarantees of finding critical points.
+\epart{b} The surface $z=f(x)$ has many local maxima and minima.  Choose an algorithm which would, in good circumstances, quickly find a local minimum, and write a pseudocode for this algorithm.  Specifically, this algorithm should use the Hessian \emph{and} it should be guaranteed to converge to a critical point.
 
 \epart{c} Describe an algorithm which would find all of the local minima in a closed rectangle, for example $R=\{-100\le x_1 \le 100, -100\le x_2 \le 100\}$.
 
@@ -151,7 +156,7 @@ In 2D ($n=2$) there are three possibilities for the dimension of the feasible se
     \text{minimize}   &&  z = c^\top &x \\
     \text{subject to} && \quad \sum_{i=1}^n x_i^2 &= 1
 \end{alignat*}
-where $x\in\RR^n$.  The single equality constraint, which can be written $\|x\|^2=1$.
+where $x\in\RR^n$.  Note that the equality constraint can also be written $\|x\|^2=1$.
 
 \epart{a}  Compute the Lagrangian, and its gradient, and state the first-order necessary conditions.
 
